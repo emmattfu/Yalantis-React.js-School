@@ -1,0 +1,12 @@
+.employeesList {
+    display: flex;
+    flex-direction: row;
+  
+    flex-wrap: wrap;
+}
+
+
+.employeesList__item {
+    width: 250px;
+    margin-bottom: 45px;
+}

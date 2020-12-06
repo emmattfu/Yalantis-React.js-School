@@ -1,0 +1,11 @@
+.header {
+    padding: 15px 15px;
+}
+
+.header__nav span {
+    color: black
+}
+
+.header__nav a + a {
+    margin-left: 15px;
+}

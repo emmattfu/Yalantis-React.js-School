@@ -1,0 +1,17 @@
+.employees {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.employees__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+
+.employees__birthday {
+    max-width: 450px;
+}
