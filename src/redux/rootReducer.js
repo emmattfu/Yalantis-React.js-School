@@ -41,7 +41,8 @@ const rootReducer = (state = initialState, action) => {
   } else if (action.type === CHOOSE_EMPLOYEE){
       return {...state, selectedEmployees: [...state.selectedEmployees, action.payload]}
   } else if (action.type === REMOVE_EMPLOYEE) {
-      return {...state}
+      const filteredEmployees = state.selectedEmployees.filter(el => el.id !== action.payload)
+      return {...state, selectedEmployees: filteredEmployees}
   }
 
   return state;

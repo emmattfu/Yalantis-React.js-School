@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import EmployeesBrithday from "../components/EmployeesBirthday";
 import EmployeesList from "../components/EmployeesList";
 import { getEmployees } from "../redux/actions";
 
@@ -22,7 +23,7 @@ const Employees = () => {
 
       <div className="employees__birthday"> 
         <h2>Employees birthday</h2>
-        <div></div>
+        <EmployeesBrithday />
       </div>
     </div>
   );

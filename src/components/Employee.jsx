@@ -1,16 +1,16 @@
 import React, {useState} from 'react'
 import {useDispatch} from 'react-redux'
-import { chooseEmployee } from '../redux/actions'
+import { chooseEmployee, removeEmployee } from '../redux/actions'
 
 const Employee = ({person}) => {
     const [isChecked, setIsChecked] = useState(false)
     const dispatch = useDispatch()
-
+    
     const onChangeHandler = (e) =>{
         if (isChecked === false) {
             dispatch(chooseEmployee(person))
         } else {
-            console.log('dispatch remove')
+            dispatch(removeEmployee(e.target.id))
         }
         
         setIsChecked(prev => !prev)
@@ -19,7 +19,7 @@ const Employee = ({person}) => {
     return (
         <div className="employee" style={{display: "flex"}}>
             <div>{person.lastName} {person.firstName}</div>
-            <input type="checkbox" onChange={onChangeHandler} checked={isChecked}/>
+            <input type="checkbox" id={person.id} onChange={onChangeHandler} checked={isChecked} />
         </div>
     )
 }

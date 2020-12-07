@@ -1,4 +1,4 @@
-const { GET_EMPLOYEES, CHOOSE_EMPLOYEE } = require("./types")
+const { GET_EMPLOYEES, CHOOSE_EMPLOYEE, REMOVE_EMPLOYEE } = require("./types")
 
 export const getEmployees = () => {
     return async dispatch => {
@@ -12,6 +12,10 @@ export const getEmployees = () => {
     }
 }
 
-export const chooseEmployee = (employee) => {
+export const chooseEmployee = employee => {
     return {type: CHOOSE_EMPLOYEE, payload: employee}
+}
+
+export const removeEmployee = id => {
+    return {type: REMOVE_EMPLOYEE, payload: id}
 }
