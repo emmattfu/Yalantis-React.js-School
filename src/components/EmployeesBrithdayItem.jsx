@@ -1,9 +1,10 @@
 import React from 'react'
+import { getEmployeeDate } from '../utils/utils'
 
 const EmployeesBrithdayItem = ({month, months, employees}) => {
 
     const employeesThisMonth = employees.filter(emp => {
-        const monthIndex = new Date(emp.dob).getMonth()
+        const {monthIndex} = getEmployeeDate(emp)
         return months[monthIndex].month === month.month
     })
     
@@ -13,12 +14,11 @@ const EmployeesBrithdayItem = ({month, months, employees}) => {
 
     return (
         <>
-         <h1>{month.month}</h1>
+         <h3>{month.month}</h3>
             <ul>
                 {employeesThisMonth.map(employee => {
-                    const date = new Date(employee.dob).getDate()
-                    const monthIndex = new Date(employee.dob).getMonth()
-                    const year = new Date(employee.dob).getFullYear()
+                    const {date, monthIndex, year} = getEmployeeDate(employee)
+
                     return (
                     <li key={employee.id}>
                         {`${employee.lastName} ${employee.firstName} - ${date} ${months[monthIndex].month} ${year} year`}

@@ -17,7 +17,7 @@ const EmployeesList = ({alphabet, employees}) => {
 
                 return (
                     <div className="employeesList__item" key={elem.id}>
-                        {elem.letter}
+                        <div className="employeesList__item-letter">{elem.letter}</div>
                         <EmployeeListItem letter={elem} employees={employees}/>
                     </div>
                 )

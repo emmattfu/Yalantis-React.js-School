@@ -7,8 +7,8 @@ const Header = () => {
     return (
         <div className="header">
             <nav className="header__nav">
-                <NavLink to="/"><span>Home</span></NavLink>
-                <NavLink to="/employees"><span>Employees</span></NavLink>
+                <NavLink exact to="/" activeClassName="link-active">Home</NavLink>
+                <NavLink exact to="/employees" activeClassName="link-active">Employees</NavLink>
             </nav>
         </div>
     )

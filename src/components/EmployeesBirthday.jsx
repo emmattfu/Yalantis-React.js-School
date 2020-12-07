@@ -1,9 +1,12 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import EmployeesBrithdayItem from './EmployeesBrithdayItem'
+import { monthsArr } from '../utils/utils'
 
 const EmployeesBrithday = () => {
-    const {selectedEmployees, months} = useSelector(state => state)
+    const selectedEmployees  = useSelector(state => state.selectedEmployees)
+    const months = [...monthsArr]
+    
 
     if (!selectedEmployees.length) {
         return <h2>No selected employees</h2>
