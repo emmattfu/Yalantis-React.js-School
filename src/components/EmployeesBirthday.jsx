@@ -11,7 +11,7 @@ const EmployeesBrithday = () => {
 
     return (
        <>
-        {months.map(month => <EmployeesBrithdayItem month={month} months={months} employees={selectedEmployees}/>)}
+        {months.map(month => <EmployeesBrithdayItem key={month.id} month={month} months={months} employees={selectedEmployees}/>)}
        </>
     )
 }

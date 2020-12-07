@@ -12,7 +12,20 @@ const EmployeesBrithdayItem = ({month, months, employees}) => {
     }
 
     return (
-      <h1>{month.month}</h1>
+        <>
+         <h1>{month.month}</h1>
+            <ul>
+                {employeesThisMonth.map(employee => {
+                    const date = new Date(employee.dob).getDate()
+                    const monthIndex = new Date(employee.dob).getMonth()
+                    const year = new Date(employee.dob).getFullYear()
+                    return (
+                    <li key={employee.id}>
+                        {`${employee.lastName} ${employee.firstName} - ${date} ${months[monthIndex].month} ${year} year`}
+                    </li>)
+                })}
+            </ul>
+        </>
     )
 }
 
