@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Yalantis-React.js-School/static/css/main.02a48df7.chunk.css",
-    "main.js": "/Yalantis-React.js-School/static/js/main.b9f78c52.chunk.js",
-    "main.js.map": "/Yalantis-React.js-School/static/js/main.b9f78c52.chunk.js.map",
+    "main.js": "/Yalantis-React.js-School/static/js/main.05149f96.chunk.js",
+    "main.js.map": "/Yalantis-React.js-School/static/js/main.05149f96.chunk.js.map",
     "runtime-main.js": "/Yalantis-React.js-School/static/js/runtime-main.c4c3a01b.js",
     "runtime-main.js.map": "/Yalantis-React.js-School/static/js/runtime-main.c4c3a01b.js.map",
     "static/js/2.8778fd07.chunk.js": "/Yalantis-React.js-School/static/js/2.8778fd07.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.c4c3a01b.js",
     "static/js/2.8778fd07.chunk.js",
     "static/css/main.02a48df7.chunk.css",
-    "static/js/main.b9f78c52.chunk.js"
+    "static/js/main.05149f96.chunk.js"
   ]
 }
