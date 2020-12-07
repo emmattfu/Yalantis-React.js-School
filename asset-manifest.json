@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Yalantis-React.js-School/static/css/main.02a48df7.chunk.css",
+    "main.js": "/Yalantis-React.js-School/static/js/main.05149f96.chunk.js",
+    "main.js.map": "/Yalantis-React.js-School/static/js/main.05149f96.chunk.js.map",
+    "runtime-main.js": "/Yalantis-React.js-School/static/js/runtime-main.c4c3a01b.js",
+    "runtime-main.js.map": "/Yalantis-React.js-School/static/js/runtime-main.c4c3a01b.js.map",
+    "static/js/2.8778fd07.chunk.js": "/Yalantis-React.js-School/static/js/2.8778fd07.chunk.js",
+    "static/js/2.8778fd07.chunk.js.map": "/Yalantis-React.js-School/static/js/2.8778fd07.chunk.js.map",
+    "static/js/3.83af8143.chunk.js": "/Yalantis-React.js-School/static/js/3.83af8143.chunk.js",
+    "static/js/3.83af8143.chunk.js.map": "/Yalantis-React.js-School/static/js/3.83af8143.chunk.js.map",
+    "index.html": "/Yalantis-React.js-School/index.html",
+    "static/css/main.02a48df7.chunk.css.map": "/Yalantis-React.js-School/static/css/main.02a48df7.chunk.css.map",
+    "static/js/2.8778fd07.chunk.js.LICENSE.txt": "/Yalantis-React.js-School/static/js/2.8778fd07.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c4c3a01b.js",
+    "static/js/2.8778fd07.chunk.js",
+    "static/css/main.02a48df7.chunk.css",
+    "static/js/main.05149f96.chunk.js"
+  ]
+}
